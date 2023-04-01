@@ -1,8 +1,9 @@
-// Wanderson Lopes de Souto mAT.: 120211139
+// Wanderson Lopes de Souto MAT.: 120211139
 module lift(
 	input logic M, A1, A2, A3,
-  output logic S);
+  output logic S
+  );
 
        
-  always_comb S <= (!M & (A1 | A2 | A3) );
+  always_comb S <= (!M & (A1 | A2 | A3) ); // verdadeiro se o bit mais significativo dos quatro é 1 ou se todos os outros 3 são 1 simultaneamente
 endmodule
